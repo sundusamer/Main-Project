@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="hat.jpg">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <style>
+body{
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgICAgIBwcHBwcHCA0HBwcHBw8ICQcNFREWFhURExMYHiggGCYxGxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDw0NDisZFRkrKzctLSs3LSsrKy0tKystKysrKzcyKysrKystNzcrKysrKysrKysrKysrKysrKy0rK//AABEIALcBEwMBIgACEQEDEQH/xAAaAAEBAQEAAwAAAAAAAAAAAAABAAIEAwUH/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQGBf/EABcRAQEBAQAAAAAAAAAAAAAAAAABEQL/2gAMAwEAAhEDEQA/APq6SbO4UGsnAKzWqxVwM1mtM1pCZrNarNXCZopoWVZqVSkUAo0UEEM6kkE0pEIqSQSkkCQIAQIM0CAaSQGrUkD17ZDU+a+mKKazVQCs00VcDNZprNXCFZprNXEis00VZUUEKRQkjRUQYGdRSgRSkgipEknWU1gBaEVhjWUUDZRBjUkgepJAa9mtAfPfWLJZOQlWaazVwCs01mrhCs01mrhChUVcTQCFIqSQZ0pEM6jEQztRxQki0IkkaEcQLWU0ANZxYUZ6zgaBnoRQGgpAa7wg4X2jayQohWaaFQCs01mriWaKazVwqKy0yqJqCSmdSShs6YVDCZ0nBGoTK1SFYZCZ2g4cOEjWVjWIFrOBrEBrIrWAz1lNYDGs4igehEAa7EE5H3loqFMhRTQomaKazVQhWa1WauJorLQXEVlEKRUQ1Ay6UagjUSy6qjUikakKsbVIZDIcSztGHDiwtRowNLAnWbBjVgpjWQ0DPWQ1QZ6A0AehFGNdCqDleiQIMhQaKcKis1qiriayy3WVRNZoaCmdZTSw0USGIwMrVGpFI1ITHqmRqCRqJrHqqNSKNROsrRixrFhM7WcDeAFrArVBjWQ1WVHooINWhJGNCKBvMknM9KFUjIUU0UyoopCoiighSaA0FM6E0jZdDDEZBrKmRqCRqJY9UyNSCNRNYdVSNSCNQmVSKJmGa0yZBmtVmnDFFNZqjApoNQSoMJJAPOCHM9QkkYFBBpqBRorKIVEUIpTOjEcQ1l0jFhDHpNQRqEx6MIjUSxphBDKpJEzqZpFMhWaazThihUVSgKgo0FQZlBAOhJOV6lJIEEaFJqBRooBRs6EUcrOgpHrLpFEMekYoSY9KNQEmVKBDKkIBCtCrJkqzTaycCrNVZqlKhBRpBaZkDSA6gQ5HqkjACSqRpoRBs6kkbOpJGzqSIY1EEMuikoGPRUSDKlIBnSEKEKioVRCs01mnAKzTWao1QqyoyEKZksoB2pJxPVJJGVQRNNCSNnUkjZ1JIMqkkbKkghj0kkGVJCDKpIUM6gQaRRTWVEKzWqzTgZrNarNVDjNSFUaCRmkkA7kk4XqEkjFQSNFSSCKkkbOpJGyqIQY0kIMuiYkGVSSNnUqkGdASNDNBSiYrNSOGzWSlGyyko0EjCSRh/9k=");
+            background-repeat: no-repeat;
+           background-size: cover;
+}
+         .logo{
+            color: navy;
+            color: white;
+            font-weight: bold;
+           
+        }
+        .span-logo{
+            color: red;
+        }
+       span img{
+        width: 100px;
+        height: 80px;
+        }
+        .menu-bar {
+  background-color:grey;
+  height: 80px;
+  width: 100%;
+  display: flex;
+ 
+ 
+  
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+.menu-bar ul li {
+padding: 5px;
+  position: relative;
+  
+}
+.menu-bar ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.menu-bar ul li a:hover {
+  color: red;
+}
+.fas {
+  float: right;
+  margin-left: 5px;
+  padding-top: 3px;
+}
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: black;
+}
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+span img{
+          width: 100px;
+          height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <span ><a  href="index.html"><img src="hat.jpg" ></a></span>
+      <h3 class="logo">My <span class="span-logo"><sup> Website</sup></span></h3>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Links <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+              <ul>
+              <li><a href="personal.html">Personal Info</a></li>
+              <li><a href="media.html">Social Media</a></li>
+              <li><a href="convert.html">Converter</a></li>
+              <li><a href="dice.html">Dice game</a></li>
+  </ul>
+          </div>
+             
+          </li>
+          <li> <a href="#">
+          Donate </a></li>
+          <li><a href="#">Rate</a></li>
+      </ul>
+      </div>
+    <form id="form">
+        <fieldset style="width: 400px; height: 300px;">
+            <legend>Unit Converter</legend>
+          <h2>Temp Converter</h2>
+           
+           <input type="radio" name="conv" id="FahrenheittoCelsius" value="fa">
+           <label for="FahrenheittoCelsius">Fahrenheit to Celsius</label>
+           <br>
+           <h2>Distance Converter</h2>
+           
+           <input type="radio" name="conv" id="Kilometerstomiles" value="m" >
+           <label for="Kilometerstomiles">Kilometers to miles</label>
+           
+           <h2>Height Converter</h2>
+           
+           <input type="radio" name="conv" id="meterstofeet" value="f">
+           <label for="meterstofeet">meters to feet</label>
+           <br>
+           <input type="submit" value="Submit" id="sub " >
+        </fieldset>
+
+    </form>
+   <form >
+        <fieldset>
+            <legend>Enter the value</legend>
+            <input type="number" name="num" id="input" min="0" disabled>
+           <button type="submit" id="btn" disabled >Convert</button>
+           <p id="display"></p>
+        </fieldset>
+    </form>
+    <script src="conver.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="hat.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body{
+          height: 2000px;
+            background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgICAgIBwcHBwcHCA0HBwcHBw8ICQcNFREWFhURExMYHiggGCYxGxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDw0NDisZFRkrKzctLSs3LSsrKy0tKystKysrKzcyKysrKystNzcrKysrKysrKysrKysrKysrKy0rK//AABEIALcBEwMBIgACEQEDEQH/xAAaAAEBAQEAAwAAAAAAAAAAAAABAAIEAwUH/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQGBf/EABcRAQEBAQAAAAAAAAAAAAAAAAABEQL/2gAMAwEAAhEDEQA/APq6SbO4UGsnAKzWqxVwM1mtM1pCZrNarNXCZopoWVZqVSkUAo0UEEM6kkE0pEIqSQSkkCQIAQIM0CAaSQGrUkD17ZDU+a+mKKazVQCs00VcDNZprNXCFZprNXEis00VZUUEKRQkjRUQYGdRSgRSkgipEknWU1gBaEVhjWUUDZRBjUkgepJAa9mtAfPfWLJZOQlWaazVwCs01mrhCs01mrhChUVcTQCFIqSQZ0pEM6jEQztRxQki0IkkaEcQLWU0ANZxYUZ6zgaBnoRQGgpAa7wg4X2jayQohWaaFQCs01mriWaKazVwqKy0yqJqCSmdSShs6YVDCZ0nBGoTK1SFYZCZ2g4cOEjWVjWIFrOBrEBrIrWAz1lNYDGs4igehEAa7EE5H3loqFMhRTQomaKazVQhWa1WauJorLQXEVlEKRUQ1Ay6UagjUSy6qjUikakKsbVIZDIcSztGHDiwtRowNLAnWbBjVgpjWQ0DPWQ1QZ6A0AehFGNdCqDleiQIMhQaKcKis1qiriayy3WVRNZoaCmdZTSw0USGIwMrVGpFI1ITHqmRqCRqJrHqqNSKNROsrRixrFhM7WcDeAFrArVBjWQ1WVHooINWhJGNCKBvMknM9KFUjIUU0UyoopCoiighSaA0FM6E0jZdDDEZBrKmRqCRqJY9UyNSCNRNYdVSNSCNQmVSKJmGa0yZBmtVmnDFFNZqjApoNQSoMJJAPOCHM9QkkYFBBpqBRorKIVEUIpTOjEcQ1l0jFhDHpNQRqEx6MIjUSxphBDKpJEzqZpFMhWaazThihUVSgKgo0FQZlBAOhJOV6lJIEEaFJqBRooBRs6EUcrOgpHrLpFEMekYoSY9KNQEmVKBDKkIBCtCrJkqzTaycCrNVZqlKhBRpBaZkDSA6gQ5HqkjACSqRpoRBs6kkbOpJGzqSIY1EEMuikoGPRUSDKlIBnSEKEKioVRCs01mnAKzTWao1QqyoyEKZksoB2pJxPVJJGVQRNNCSNnUkjZ1JIMqkkbKkghj0kkGVJCDKpIUM6gQaRRTWVEKzWqzTgZrNarNVDjNSFUaCRmkkA7kk4XqEkjFQSNFSSCKkkbOpJGyqIQY0kIMuiYkGVSSNnUqkGdASNDNBSiYrNSOGzWSlGyyko0EjCSRh/9k=");
+            background-repeat: no-repeat;
+           background-size: cover;
+        }
+        span img{
+          width: 100px;
+          height: 80px;
+        }
+        
+        .logo{
+            color: navy;
+            color: white;
+            font-weight: bold;
+           
+        }
+        .span-logo{
+            color: red;
+        }
+        .menu-bar {
+  background-color:grey;
+  height: 80px;
+  width: 100%;
+  display: flex;
+ position: sticky;
+ top: 0px;
+  
+  position: relative;
+}
+p img{
+  position: absolute;
+  left: 300px;
+  bottom: -100px;
+}
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+.menu-bar ul li {
+padding: 5px;
+  position: relative;
+  
+}
+.menu-bar ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.menu-bar ul li a:hover {
+  color: red;
+}
+.fas {
+  float: right;
+  margin-left: 5px;
+  padding-top: 3px;
+}
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: black;
+}
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+
+
+        
+    </style>
+    <title>Cutty</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <span><a  href="index.html"><img src="hat.jpg" ></a></span>
+    <h3 class="logo">My <span class="span-logo"><sup> Website</sup></span></h3>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Links <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-menu">
+            <ul>
+            <li><a href="personal.html">Personal Info</a></li>
+            <li><a href="media.html">Social Media</a></li>
+            <li><a href="convert.html">Converter</a></li>
+            <li><a href="dice.html">Dice game</a></li>
+</ul>
+        </div>
+           
+        </li>
+        <li> <a href="#">
+        Donate </a></li>
+        <li><a href="#">Rate</a></li>
+    </ul>
+    </div>
+    <br>
+    <br>
+    <h1>Intro</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit totam mollitia quisquam eaque commodi velit labore hic aspernatur earum autem. Similique sed ab nesciunt qui ut, blanditiis alias doloremque architecto eum odio natus quasi perspiciatis iusto laboriosam praesentium nemo suscipit ipsam sapiente facilis! Rem deserunt, pariatur delectus quasi iure ipsum qui temporibus eveniet quaerat, dolor, fuga voluptate voluptas eligendi. Ad quia voluptatum, nihil quaerat, voluptas doloribus, cumque impedit magnam voluptatibus tempora facere nostrum repellendus ipsum vero dignissimos omnis sed laudantium amet obcaecati fugit eligendi. Harum natus inventore quod iste exercitationem sed vel quibusdam, quidem rem ad veniam debitis voluptate illo!
+    
+    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYMlNWPLKohs6rqbqeu5hecVcIzhooWphR1w&usqp=CAU" width="300px" height="150px">
+    </p>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br> <br>
+    <br>
+    <article>
+      <h3>Some of our product</h3>
+        <div>
+          
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxoasfnRTgE8Grlaxv522M8_77liyLtqg-Q&usqp=CAU">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQgLfrZ2WUKuJadxPrgCy39nJoRpv1tys_LA&usqp=CAU" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3huV2QhX0CU66QvgLiBKORYxXc_e5BKwZug&usqp=CAU" >
+        </div>
+    </article>
+    <br> <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <footer>
+
+      <i class="fa fa-copyright" style="color: black; font-size: 30px;">copyright</i>
+     
+     
+     </footer>
+  </body>
+  </html>
+  
