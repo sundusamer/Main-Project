@@ -14,7 +14,9 @@ btn.disabled=false;
 
 }
 btn.addEventListener("click",handleClick);
-function handleClick(){
+
+function handleClick(e){
+    e.preventDefault();
      userGuess=parseFloat(input.value);
    //  var conversionType = document.querySelector('input[name="conv"]:checked').value;
      
